@@ -1,0 +1,38 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11220\viewh8400\viewkind0
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+\ls1\ilvl0
+\f0\fs24 \cf0 {\listtext	1.	}The program is a calculator which evaluates mathematical expressions containing numbers and certain defined operators (six selected operators). \
+{\listtext	2.	}It makes use of two main stacks - (i) a number stack to store and retrieve the numbers (double data type) and (ii) an operator stack to store and retrieve the operators (string data type).\
+{\listtext	3.	}The mathematical expressions are hard coded. The performCalculation function is defined which makes use of vectors for accommodating varying sizes of values and operators.\
+{\listtext	4.	}The performCalculation function contains a function \'91calculate\'92 which first checks whether the first element in the expression is a number or an operator and ultimately pushes the respective element into the respective stack (number stack / operator stack). \
+{\listtext	5.	}If the element is an operator, a function \'91performOperator\'92 is defined which checks whether the operator stack is empty.\
+\ls1\ilvl0
+\b {\listtext	6.	}If it is not empty, a check is performed to compare whether the current operator has lesser precedence than the top-most operator (peek) of the operator stack. 
+\b0 \
+{\listtext	7.	}If it is, the expression is evaluated under function \'91evaluate\'92 wherein the mathematical tasks of the operators have been defined.  \
+{\listtext	8.	}The operator is called from the operator stack and a function \'91getNumber\'92 is defined which retrieves a number from the number stack. This function is called under the \'91evaluate\'92 function. \
+{\listtext	9.	}If the number stack is empty the \'91getNumber\'92 function returns the message that there are not enough numbers.\
+{\listtext	10.	}If not the numbers on either side of the operators are called and the operator performs the function it was defined to do. \
+{\listtext	11.	}The \'91precedence\'92 function is defined under the performOperator function. \
+{\listtext	12.	}The \'91precedence\'92 function returns the precedence order through calling the index number of the string \'91operators\'92. \
+{\listtext	13.	}The \'91operators\'92 string is created and the order of elements in the string is entered by the programmer based on his/her desired precedence. \
+{\listtext	14.	}Changing the order of elements in this string has the following ripple effect -> the precedence function returns the changed order of precedence of the operators and this is reflected when the \'91performOperator\'92 function does the check of comparing precedence of current operator to the precedence of the operator in the operator stack.\
+{\listtext	15.	}\
+{\listtext	16.	}\
+{\listtext	17.	}\
+{\listtext	18.	}\
+{\listtext	19.	}\
+{\listtext	20.	}\
+{\listtext	21.	}\
+{\listtext	22.	}\
+{\listtext	23.	} \
+{\listtext	24.	}\
+{\listtext	25.	}\
+{\listtext	26.	}\
+{\listtext	27.	}\
+}
